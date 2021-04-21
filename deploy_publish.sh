@@ -1,2 +1,3 @@
 #!/bin/env bash
-git push origin master:deploy
+npm version $1 && \
+git push -u origin main:deploy
