@@ -12,7 +12,24 @@ const fn:React.MouseEventHandler = (e) => {
 function render() {
   ReactDOM.render(
     <div>
-      <Icon name="wechat" onClick={fn}/>
+      <Icon
+        name="wechat"
+        onClick={fn}
+        onMouseEnter={()=>console.log('enter')}
+        onMouseLeave={()=>console.log('leave')}
+      />
+      <Icon
+        name="setting"
+        onClick={fn}
+        onMouseEnter={()=>console.log('enter')}
+        onMouseLeave={()=>console.log('leave')}
+      />
+      <Icon
+        name="light"
+        onClick={fn}
+        onMouseEnter={()=>console.log('enter')}
+        onMouseLeave={()=>console.log('leave')}
+      />
     </div>, document.querySelector('#root'));
 }
 
